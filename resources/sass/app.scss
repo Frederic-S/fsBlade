@@ -7,6 +7,58 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    background-color: $blue;
+    //Margin bottom by footer height
+    margin-bottom: 60px;
+}
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: transparent;
+    margin-left: -80px;
+    color: black;
+}
+
+.logonav {
+    width: 42px;
+}
+
+.container-header {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    text-align: center;
+}
+
+.container-welcome {
+    display: grid;
+    background-color: #ffb5a7;
+    text-align: center;
+}
+
+.welcome-text {
+    padding: 5%;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #999999;
 }
